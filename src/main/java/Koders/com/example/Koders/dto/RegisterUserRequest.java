@@ -1,0 +1,12 @@
+package Koders.com.example.Koders.dto;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
+public record RegisterUserRequest(
+        @NotBlank String name,
+        @Email @NotBlank String email,
+        @NotBlank String phone,
+        @NotBlank String password
+) {}
+
